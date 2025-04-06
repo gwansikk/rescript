@@ -111,7 +111,7 @@ let precedence = function
   | BangEqualEqual | LessEqual | GreaterEqual | BarGreater ->
     5
   | Plus | PlusDot | Minus | MinusDot | PlusPlus | LessThanLessThan
-  | GreaterThanGreaterThan ->
+  | GreaterThanGreaterThan | GreaterThanGreaterThanGreaterThan ->
     6
   | Asterisk | AsteriskDot | Forwardslash | ForwardslashDot | Percent -> 7
   | Exponentiation -> 8
