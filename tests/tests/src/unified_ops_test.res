@@ -35,4 +35,3 @@ let shr_int = 8 >> 2
 let ushr_int = -1 >>> 1
 
 let shl_bigint = 1n << 2n
-let shr_bigint = 8n >> 2n
