@@ -10,16 +10,34 @@
 > - :house: [Internal]
 > - :nail_care: [Polish]
 
-# 12.0.0-alpha.11 (Unreleased)
+# 12.0.0-alpha.12 (Unreleased)
+
+#### :bug: Bug fix
+
+- Fix node.js ExperimentalWarning. https://github.com/rescript-lang/rescript/pull/7379
+
+#### :house: Internal
+
+- Better representation of JSX in AST. https://github.com/rescript-lang/rescript/pull/7286
+
+# 12.0.0-alpha.11
 
 #### :bug: Bug fix
 
 - Fix `Error.fromException`. https://github.com/rescript-lang/rescript/pull/7364
+- Fix signature of `throw`. https://github.com/rescript-lang/rescript/pull/7365
+- Fix formatter adds superfluous parens in pipe chain. https://github.com/rescript-lang/rescript/pull/7370
 
 #### :house: Internal
 
 - Remove `Stdlib_Char` module for now. https://github.com/rescript-lang/rescript/pull/7367
 - Convert internal JavaScript codebase into ESM, ReScript package itself is now ESM (`"type": "module"`). https://github.com/rescript-lang/rescript/pull/6899
+- Add built-in support for the JavaScript `in` operator. https://github.com/rescript-lang/rescript/pull/7342
+- AST cleanup: add `Pexp_await` ast node instead of `res.await` attribute. (The attribute is still used for await on modules currently). https://github.com/rescript-lang/rescript/pull/7368
+
+#### :nail_care: Polish
+
+- More deprecations in `Pervasives`; add `Stdlib.Pair` and `Stdlib.Int.Ref`. https://github.com/rescript-lang/rescript/pull/7371
 
 # 12.0.0-alpha.10
 
@@ -60,7 +78,7 @@
 
 #### :bug: Bug fix
 
-- Fix recursive untagged variant type checking by delaying well-formedness checks until environment construction completes. [#7320](https://github.com/rescript-lang/rescript/pull/7320)
+- Fix recursive untagged variant type checking by delaying well-formedness checks until environment construction completes. https://github.com/rescript-lang/rescript/pull/7320
 - Fix incorrect expansion of polymorphic return types in uncurried function applications. https://github.com/rescript-lang/rescript/pull/7338
 
 # 12.0.0-alpha.9
